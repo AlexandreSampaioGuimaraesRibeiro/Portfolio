@@ -34,6 +34,10 @@ public class PortfolioController {
 
     @GetMapping ("/sobre")
     public String sobre(Model model) {
+        model.addAttribute("sobre", "Desde criança, sempre fui fascinado por tecnologia."
+                + "Atualmente, estou cursando Engenharia de Software na PUC Minas, "
+                + "onde tenho a oportunidade de aprender e aplicar meus conhecimentos em projetos acadêmicos e pessoais."
+                + "Meu objetivo é me tornar um desenvolvedor de software competente, capaz de criar soluções inovadoras e eficientes.");
         model.addAttribute("title", "sobre");
         return "sobre";
     }
